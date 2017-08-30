@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+  
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Login form</title>
+</head>
+
+<body>
+    <div class="login-wrap">
+    <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <div class="group">
+                    <label for="user" class="label">Username</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <input id="check" type="checkbox" class="check" checked>
+                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign In">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <a href="#forgot">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="sign-up-htm">
+                <div class="group">
+                    <label for="user" class="label">Username</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Confirm Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Email Address</label>
+                    <input id="pass" type="text" class="input">
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign Up">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <label for="tab-1">Already a Member?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+    app.initialize();
+    </script>
+</body>
+
+</html>
